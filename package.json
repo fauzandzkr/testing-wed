@@ -1,0 +1,25 @@
+{
+  "devDependencies": {
+    "autoprefixer": "^10.4.20",
+    "cssnano": "^5.1.15",
+    "postcss": "^8.4.47",
+    "postcss-cli": "^11.0.0",
+    "tailwindcss": "^3.4.10"
+  },
+  "scripts": {
+    "build:css": "postcss src/input.css -o src/output.css",
+    "watch:css": "postcss src/input.css -o src/output.css --watch",
+    "minify:css": "postcss src/output.css -o src/final.css --use cssnano",
+    "start": "npm run build:css && npm run minify:css && your-start-command"
+  },
+  "dependencies": {
+    "gsap": "^3.12.5"
+  },
+  "name": "design1",
+  "version": "1.0.0",
+  "main": "tailwind.config.js",
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "description": ""
+}
