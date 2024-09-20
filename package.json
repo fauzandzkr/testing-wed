@@ -8,8 +8,9 @@
   },
   "scripts": {
     "build:css": "postcss src/input.css -o src/output.css",
-    "watch:css": "postcss src/input.css -o src/output.css --watch",
+    "watch:css": "postcss src/input.css -o src/output.  css --watch",
     "minify:css": "postcss src/output.css -o src/final.css --use cssnano",
+    "dev":"cross-env NODE_ENV=production postcss src/input.css -o src/ouput.css",
     "start": "npm run build:css && npm run minify:css && your-start-command"
   },
   "dependencies": {
